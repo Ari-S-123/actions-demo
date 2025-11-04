@@ -31,8 +31,12 @@ jobs:
           else
             npm install --no-audit --no-fund
           fi
-            - name: Run lint
-              run: npm run lint
+      # Execute linting immediately after dependency installation to surface
+      # static analysis violations before proceeding to the test suite. This
+      # prevents downstream jobs from running against code that fails lint
+      # policies enforced in `npm run lint`.
+      - name: Run lint
+        run: npm run lint
       - name: Run tests
         run: npm test
 
