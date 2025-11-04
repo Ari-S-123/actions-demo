@@ -13,3 +13,9 @@ test("sum rejects non-numeric inputs", () => {
   assert.throws(() => sum(2, Number.POSITIVE_INFINITY), TypeError);
   assert.throws(() => sum(NaN, 0), TypeError);
 });
+
+test("sum rejects non-numeric inputs", () => {
+  assert.throws(() => sum("2", 3), TypeError);
+  assert.throws(() => sum(2, Number.POSITIVE_INFINITY), TypeError);
+  assert.throws(() => sum(NaN, 0), TypeError);
+});
