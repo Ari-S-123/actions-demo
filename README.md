@@ -4,7 +4,7 @@ This repository contains a deliberately small Node.js project that demonstrates 
 
 ## Prerequisites
 
-- Recent [Node.js](https://nodejs.org/) runtime (>= 20). The workflows install Node 20 automatically, so using the same version locally avoids surprises.
+- Recent [Node.js](https://nodejs.org/) runtime. The workflows install Node 24 automatically, so using the same version locally avoids surprises.
 - npm (bundled with Node).
 - Access to a GitHub repository with GitHub Pages enabled via GitHub Actions.
 
