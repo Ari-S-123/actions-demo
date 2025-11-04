@@ -1,0 +1,27 @@
+{
+  "name": "actions-demo",
+  "version": "1.0.0",
+  "description": "show how github actions work",
+  "keywords": [
+    "github-actions"
+  ],
+  "license": "MIT",
+  "author": "Ari_S_123",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.js",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
+  }
+}
